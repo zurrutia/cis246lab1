@@ -1,1 +1,78 @@
-Lab 2 summary
+Zach Urrutia 
+11/6/2020
+Lab 2 summary Assignment
+
+This assignment is to redo Lab 02 but to do the commands in our CentOS Virtual
+Machine.
+
+
+	The first command that Lab02 has us perform is the ls command. The ls command
+is used to list the directories and files in your current working directory
+(if no path is specified with the ls command). When entered into the CentOS
+virtual machine, the commands executes in the same manner that it does in 
+Ubuntu. (Note: I am performing the ls command inside my /home/zach/repos/cis246lab1
+directory)
+
+	The optional parameter -l to the ls command also perform the same in CentOS as 
+it does in Ubuntu. The -l paramter still shows the permissions of the files 
+along with they number of hardlinks, the user and group owners of the file, the
+size of the file, and the date the was last modified. Note, all ls parameters
+output the same way in CentOS as they do in Ubuntu. 
+
+	On page 2.1.17 of Lab02, the lab demonstrates the touch command to create files
+inside of directories. As expected, the touch command is exactly the same in 
+CentOS. The command to remove created files, rm, is also the same in CentOS.
+
+	The next command Lab02 demonstrates is the uname command. When ran in CentOS 
+without any parameters, the command outputs "Linux" just as it does in Ubuntu.
+When combined with the -n parameter, the command uname -n displays the host 
+name of the Linux machine I am on which in this case is CentOS246. Note, all
+parameters to the uname command perform the same way in CentOS as they do in
+Ubuntu. 
+
+	The next command which is the copy command, cp, does work the same way in CentOS
+as it does in Ubuntu. The command structure is the same in that the cp command
+requires the name of the file you want to copy followed by the destination 
+you want to copy the file to. If you want to copy it to a destination while 
+creating a new directory to copy it to, type the name of the directory after 
+the desination path. For example if I want to copy the file test.txt to a new
+directory called NewDirectory in my home user directory the command would look like: 
+cp test.text /home/zach NewDirectory. This works in CentOS the same way it does
+in Ubuntu.
+
+	On page 2.1.21, Lab02 explains how to create an alias in Ubuntu by performing
+alias name=command format. I tested this command in CentOS by creating a new
+alias by the name print and made it equal to the echo command. The command looked
+like this: alias print=echo. When I typed the command "print Hello", it printed
+to the screen. For this specific example I actually was not sure if print was
+an actual command in Linux. So I deleted the alias by using the unalias print
+command.
+ 
+	I then performed the command which print. The output informed me that print was
+infact not found in bin directories that house local commands. For the heck of
+it I recreated the echo alias print and reran the which print command. The 
+output of this command now shows that the print command is housed in the /bin
+directory. This was a fun little side thing to see for myself. Long story short
+you can create an alias in CentOS as you do in Ubuntu.
+
+  
+	The type command still functions the same in CentOS as it does in
+Ubuntu by telling you what the file is.  
+	
+	The man command does still work in CentOS for example getting help 
+on the pwd command you would type man ls. However, the way you can jump to 
+specific sections of a manual page in Ubuntu, you cannot seem to do in CentOS.
+For example in Ubuntu I can specify that I want to look at section 5 of the man
+page for the passwd command, in one command. To do this I would type man 5 passwd.
+In CentOS, the output of this very command displays " No manual entery for passwd
+in section 5" whereasin the Ubuntu terminal of Lab02, I get the section 5 output
+of the command passwd.
+
+It was interesting to see that most of the commands in Lab 02 module work the same
+in CentOS as they do in Ubuntu. I did expect that since it is still the same 
+Linux/GNU language, but different flavors. It is nice that although a different
+flavor of Linux, Ubuntu commands still operate similiar in CentOS (atleat for 
+the commands in Lab 02).
+
+
+  
