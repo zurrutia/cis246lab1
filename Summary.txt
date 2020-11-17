@@ -76,3 +76,22 @@ the commands in Lab 02).
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+Hello,
+
+I am testing the cat >> redirection command to this file.
+That is all.
+
+Thank you,
+
+Zach 
